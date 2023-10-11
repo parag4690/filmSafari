@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmSafari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/Film Safari.png">
+</head>
+<body>
+   <div id="container">
+        <ul>
+            <li id="Title"> <img class="logo" src="images/Film Safari.png"> </li>
+            
+            <li>
+                <form action="php"><input type="text" id="search" placeholder="Search Movie Name"></form>
+            </li>
+            <li><button id="searchBtn"> Search </button></li>
+        </ul>
+        <section>
+            <div  class="active loading">
+               <img  src="images/loading.gif" alt="" height="500px">
+            </div>
+            <div class="movieList" class="">
+              
+            </div>
+            <div id="fav">
+                <h1 class="heading">Favourite Movies ⭐ </h1>
+                <div class="items">
+                
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

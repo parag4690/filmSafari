@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:wght@500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+html , body {
+  /* height: 100%;
+  width: 100%; */
+  margin:0;
+  padding:0;
+   font-family: 'Poppins', sans-serif;
+   
+}
+#container{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    height: 5em;
+    cursor: pointer;
+}
+
+ul{
+    /* height: 5rem; */
+    background-color: black;
+    padding: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search{
+    width: 50em;
+    padding: 12px 10px;
+    border-radius: 8px ;
+    border: none;
+}
+#searchBtn{
+    /* width: 15em; */
+    padding: 8px 10px;
+    font-size: 1.4em;
+    background-color: rgb(57, 86, 234);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+section{
+    display: flex;
+}
+.movieList{
+    /* border: 2px solid red; */
+    /* height: 100%; */
+    width: 65%;
+    padding: 12px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1.8em;
+}
+
+/*  */
+.con{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px ;
+    box-shadow: 1px 1px 10px 1px gray;
+    max-height: 31em;
+    /* border: 2px solid red; */
+}
+.pic{
+    border-top-right-radius: 8px ;
+    border-top-left-radius: 8px;
+    width: 100%;
+    height: 57%;
+}
+.content{
+    padding:6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: space-between;
+    height: 100%;
+}
+.summery{
+    color: gray;
+    font-size: 13px;
+}
+
+.addFav{
+    width: 100%;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+span{
+    font-weight: 900;
+    color: black;
+
+}
+
+/* favourate movies */
+#fav{
+    width: 35%;
+    
+}
+.heading{
+    width: 100%;
+    text-align: center;
+
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    padding: 7px;
+    gap: 1.2em;
+}
+.fav-movie{
+    height: 75px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+    box-shadow: 1px 1px 10px 1px gray;
+    
+}
+.fav-pic{
+      height: 100%;
+      width: 70px;
+}
+.dub{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1px;
+    height: 100%;
+}
+.remove-fav{
+  margin-right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 7px ;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* loading */
+
+.loading{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    display: none;
+}
+
