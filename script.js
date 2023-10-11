@@ -131,6 +131,49 @@ const movies = () => {
   }
 };
 
+movieList.addEventListener("click", (event) => {
+  //    console.log(event.target.parentNode.parentNode.firstElementChild);
+  const Url = event.target.parentNode.parentNode.firstElementChild.src;
+  const f_name = event.target.parentNode.firstElementChild.innerText;
+  const movie_id = event.target.parentNode.parentNode.id;
+  console.log(movie_id);
+
+  if(check.has(movie_id)==false){
+
+  const m = document.createElement("div");
+  m.innerHTML = `
+   <div class="dub">
+       <img class="fav-pic" src=${Url} alt="" >
+       <p>${f_name}</p>
+   </div>
+<button class="remove-fav">remove</button>
+`;
+  m.classList.add("fav-movie");
+  m.id=movie_id;
+  items.appendChild(m);
+  check.set(movie_id , true);
+
+  }
+});
+
+items.addEventListener("click", (event) => {
+  console.log(event.target.parentNode);
+  check.delete(event.target.parentNode.id);
+  if(event.target.classList.contains("remove-fav")){
+  event.target.parentNode.remove();
+  }
+});
+
+const noMovie = ()=>{
+    let intial = "";
+    for(let i=0; i<4; i++){
+        let idx = Math.floor(Math.random()*25);
+        console.log(idx);
+        intial+=str[idx];
+    }
+    console.log(intial);
+    renderData(intial);
+};
 
 logo.addEventListener("click" , ()=>{
     movieList.innerHTML="";
