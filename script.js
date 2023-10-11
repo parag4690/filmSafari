@@ -25,7 +25,7 @@ const check = new Map();
 const options = {
 	method: 'GET', // Specifies the HTTP request , take data from some specific resource 
 	headers: { // key value obj
-		'X-RapidAPI-Key': 'c5eaf7e1aamshd0f69459a8f9045p1a833bjsn413a10e061a4',
+		'X-RapidAPI-Key': '42b86e32b7mshf535bc53bd050b9p13de07jsnaf3b4a95ae78',
 		'X-RapidAPI-Host': 'imdb8.p.rapidapi.com' // spcefies the domain
 	}
 };
